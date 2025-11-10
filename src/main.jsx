@@ -10,8 +10,11 @@ createRoot(document.getElementById('root')).render(
       clientId="OKRG2SK4ZWwrmoLSfdjpam6Df52BX4JJ"
       authorizationParams={{
         audience: "https://dev-gfdpj05ngeziykup.us.auth0.com/api/v2/",
-        redirect_uri: window.location.origin
+        redirect_uri: window.location.origin,
+        scope: "openid profile email"
       }}
+      cacheLocation="localstorage"
+      useRefreshTokens
     >
     <App />
   </Auth0Provider>,
