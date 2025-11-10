@@ -10,5 +10,8 @@ export default defineConfig({
         changeOrigin: true,
       },
     },
+    "rewrites": [
+    { "source": "/api/(.*)", "destination": "https://18.228.40.174:8080/api/$1" }
+    ]
   },
 })
